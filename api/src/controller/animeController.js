@@ -6,7 +6,7 @@ const server = Router();
 
 // CONSULTAR ANIMES //
 
-server.get('/anime', async (req, resp) =>{
+server.get('/', async (req, resp) =>{
     try
     {
         const resposta = await ListarAnimes();

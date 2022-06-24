@@ -9,7 +9,7 @@ export async function ListarAnimes(){
         FROM tb_anime`;
 
     const [resposta] = await con.query(comando);
-    return resposta[0];
+    return resposta;
 };
 
 // INSERIR ANIMES //
